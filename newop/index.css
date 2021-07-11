@@ -1,0 +1,45 @@
+body {
+  color: white;
+}
+.hidden {
+  display: none;
+}
+#gretting,
+#clock {
+  font-size: 50px;
+}
+#quote {
+  font-size: 35px;
+}
+.mainForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#todo-form :first-child,
+#loginForm :first-child {
+  outline: transparent;
+  border: none;
+  background-color: transparent;
+  width: 400px;
+  height: 65px;
+}
+#loginForm :nth-child(2) {
+  outline: transparent;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+}
+#weather {
+  font-size: 20px;
+}
+input::placeholder,
+#todo-list,
+input {
+  color: white;
+  font-size: 35px;
+}
+#todo-list {
+  list-style-type: none;
+}
