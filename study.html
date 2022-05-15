@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gothic+A1:wght@300&display=swap" rel="stylesheet">
@@ -14,18 +16,33 @@
    
 </head>
 <body>
-    <div class="frame">
+  <div id="main-form">
+    <form id="login-form">
+        <input
+          required
+          maxlength="20"
+          type="text"
+          placeholder="이름을 입력해주세요"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+      </div>
+
+    <div class="frame hidden">
       <nav class="navigator">
         <h3 class="introduce">KIM IN TAE</h3>
-        <ul>
-          <li class="nav_menu"><a href="recent.html">자기소개</a></li>
-        </ul>
+        <h3 id="clock"></h3>
         
       </nav>
       <div class="dashboard">
-        <h1>안녕하십니까 ! 제이름은<a class="highlight"> 김인태</a> 입니다!
+        <h1 id="greeting" class="hidden"></h1><h1>안녕하십니까 ! 제이름은<a class="highlight"> 김인태</a> 입니다!
            이번 과정으로 문제 해결 방법과 끈기를 길러서 좋은 프론트엔드
           엔지니어가 되는 것을 꿈꿉니다. </h1>
+      </div>
+      <div class="arrow">
+
+        
+        <a href="recent.html" class="right"><i class="fa-solid fa-angle-right fa-7x"></i></a>
       </div>
       
 
@@ -39,5 +56,8 @@
         </div>
       </footer>
     </div>
+    <script src="app.js"></script>
+    <script src="event.js"></script>
+    <script src="clock.js"></script>
 </body>
 </html>

@@ -23,6 +23,12 @@ li{
 ul{
 	margin : 0;
 }
+#clock{
+	position: relative;
+	bottom : 35px;
+	font-size: 35px;
+	color : #DEB6AB;
+}
 .introduce{
 	margin : 0;
 	font-size: 35px;
@@ -47,7 +53,7 @@ a{
 .dashboard{
 	display : flex;
 	flex-direction: column;
-	margin-top: 75px;
+	margin-top: 200px;
 	font-size: 30px;
 }
 .highlight{
@@ -82,7 +88,7 @@ a{
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
-	margin: 100px 100px;
+	margin: 30px 30px;
 }
 #profile_picture{
 	border-radius: 30px;
@@ -114,3 +120,31 @@ intro_recent h1{
 	font-size: 25px;
 	font-weight : 550;
 }	
+.arrow{
+	width : 100%;
+	height : auto;
+	display : flex;
+	justify-content: right;
+}
+
+.arrow i:hover{
+	color : gray;
+	transition : 0.25s ease-in-out;
+}
+.arrow_recent{
+	display : flex;
+	position: relative;
+	align-items: center;
+	bottom: 25px;
+	left : 460px;
+	width: 100%;
+	height : 200px;
+	
+}
+.left{
+	
+}
+.arrow_recent i:hover{
+	color : gray;
+	transition : 0.25s ease-in-out;
+}
